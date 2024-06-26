@@ -66,6 +66,9 @@ class TestAdd:
         '''calculates 45 + 55 = 100'''
         assert(add(45, 55) == 100)
 
+        
+def halve(x):
+    return x/2
 class TestHalve:
     '''function halve()'''
 
