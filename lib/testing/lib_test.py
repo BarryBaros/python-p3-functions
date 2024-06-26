@@ -33,8 +33,13 @@ def greet(name):
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "Hello, Guido!\n")
 
+
+def greet_with_default(name="programmer"):
+    print(f"Hello, {name}!")
+
 class TestGreetWithDefault:
     '''function greet_with_default()'''
+
 
     def test_greet_with_default(self):
         '''prints "Hello, programmer!"'''
