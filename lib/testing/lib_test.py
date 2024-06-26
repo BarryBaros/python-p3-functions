@@ -22,6 +22,9 @@ class TestGreetProgrammer:
 class TestGreet:
     '''function greet()'''
 
+def greet(name):
+    print(f"Hello, {name}!")
+
     def test_greet_programmer(self):
         '''prints "Hello, {name}!"'''
         captured_out = io.StringIO()
